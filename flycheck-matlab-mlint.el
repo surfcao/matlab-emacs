@@ -40,7 +40,7 @@
                    ;; to checking the 32 bit (not common anymore) version,
                    ;; we'll get the right answer most of the time.
                    "maci" "maci64"))
-           "maci64"))
+           "mac"))
         ((eq system-type 'gnu/linux)
          (cond ((string-match "64\\|i686" system-configuration)
                 "glnxa64")
@@ -64,7 +64,7 @@
        (concat
         (file-name-as-directory flycheck-matlab-mlint-platform)
         "mlint"))
-      "")
+      "/Applications/MATLAB_R2018b.app/bin/maci64/mlint")
   "Default full executable path.")
 
 (flycheck-def-executable-var matlab-mlint "<platform>/mlint")
